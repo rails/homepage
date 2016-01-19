@@ -124,7 +124,7 @@
 
       <p>This is at odds with the revered programming tradition of presenting available tools as individual choices, and to bestow the individual programmer privilege (and burden!) of deciding. 
 
-      <p>You’ve surely heard, and probably nodded to, “use the best tool for the job”. It sounds so elementary as to be beyond debate, but being able to pick the “best tool” depends on a foundation that allows “best” to be determine with confidence. This is much harder than it seems.
+      <p>You’ve surely heard, and probably nodded to, “use the best tool for the job”. It sounds so elementary as to be beyond debate, but being able to pick the “best tool” depends on a foundation that allows “best” to be determined with confidence. This is much harder than it seems.
 
       <p>It is a problem similar to that of the diner in a restaurant. And like picking each course in a seven-set meal, picking each individual library or framework is not a job done in isolation. The objective in both cases is to consider the whole evening or system.
 
@@ -132,9 +132,9 @@
 
       <p><ol><li><b>There’s safety in numbers:</b> When most people are using Rails in the same default ways, we have a shared experience. This common ground makes it much easier to teach and help people. It lays a foundation for debate on approach. We all watched the same show last night at 7, so we can talk about it the next day. It fosters a stronger sense of community.</li>
 
-      <li><b>People are perfecting the same, basic tool box:</b> As a full-stack framework, Rails has a lot of moving parts, and how those work together is as important as what they do in isolation. Much of the pain is software comes not from the individual components, but from their interaction. When we all work on alleviating shared pain from components that are configured and fail in the same ways, then we all experience less pain.</li>
+      <li><b>People are perfecting the same, basic tool box:</b> As a full-stack framework, Rails has a lot of moving parts, and how those work together is as important as what they do in isolation. Much of the pain in software comes not from the individual components, but from their interaction. When we all work on alleviating shared pain from components that are configured and fail in the same ways, then we all experience less pain.</li>
 
-      <li><b>Substitutions are still possible, but not required:</b> While Rails is an omakase stack, it still allows you to replace certain frameworks or libraries with alternatives. It just doesn’t require you to. Which means you can delay those decision until you’ve developed a clear, personal palette that may be prefer the occasional difference.</li>
+      <li><b>Substitutions are still possible, but not required:</b> While Rails is an omakase stack, it still allows you to replace certain frameworks or libraries with alternatives. It just doesn’t require you to. Which means you can delay those decision until you’ve developed a clear, personal palette that may prefer the occasional difference.</li>
       </ol></p>
 
       <p>Because even the most learned and skilled programmers who come to and stay in Rails aren’t likely opposed to all matters of the menu. (If they were, they probably wouldn’t have stuck with Rails.) So they pick their substitutions with diligence, and then go on to enjoy the rest of the curated, shared stack alongside everyone else.</p>
@@ -152,7 +152,7 @@
 
       <p>This doesn’t mean we don’t occasionally want to reach for something more object-oriented when building views. The concept of Presenters, where we wrap many methods that are interdependent with each other and the data below it, can occasionally be the perfect antidote to a soup of methods turned sour by dependencies. But it’s generally proved to be the rare rather than common fit.</p>
 
-      <p>In comparison, we treat generally treat the model in our MVC layer cake as the prime bastion of object-oriented goodness. Finding just the right names for objects, increasing the coherence, and lowering the coupling is the fun of domain modeling. It’s a very different layer from the view, so we take a different approach.</p>
+      <p>In comparison, we generally treat the model in our MVC layer cake as the prime bastion of object-oriented goodness. Finding just the right names for objects, increasing the coherence, and lowering the coupling is the fun of domain modeling. It’s a very different layer from the view, so we take a different approach.</p>
 
       <p>But even here we don’t subscribe to single-paradigm dogma. Rails concerns, the specialization of Ruby’s mixins, are often used to give the individual models a very wide surface area. This fits well with the Active Record pattern by giving the concerned methods direct access to the data and storage they interact with.</p>
 
@@ -208,7 +208,7 @@
 
       <p>This leaves the programmer with very little code to write. In the case of migrations, not only will this allow a call to rails db:migrate to upgrade the database to add this new table, it’ll also allow it to go the other way of dropping this table with another call. This is very different from a programmer making all this happen and stitching the workflow together from libraries they call themselves.</p>
 
-      <p>Some times beautiful code is more subtle, though. It’s less about making something as short or powerful as possible, but more about making the rhythm of the declaration flow.</p>
+      <p>Sometimes beautiful code is more subtle, though. It’s less about making something as short or powerful as possible, but more about making the rhythm of the declaration flow.</p>
 
       <p>These two statements do the same:</p>
 
@@ -233,7 +233,7 @@
 
       <p>Much of the complication in systems development comes from introducing new boundaries between the elements that restrict how you make calls between A and B. Method calls between objects is far simpler than remote procedure calls between microservices. There’s a whole new world of hurt in failure states, latency issues, and dependency update schedules that await those who venture into the lair of distribution.</p>
 
-      <p>Some times this distribution is simply necessary. If you want to create an API to your web application that other people can call over HTTP, well, then you just have to suck it up and deal with many of these issues (although handling requests inbound rather than sending them outbound is much easier – your downtime is someone else’s failure state!). But that’s at least a limited amount of damage inflicted on your own personal development experience.</p>
+      <p>Sometimes this distribution is simply necessary. If you want to create an API to your web application that other people can call over HTTP, well, then you just have to suck it up and deal with many of these issues (although handling requests inbound rather than sending them outbound is much easier – your downtime is someone else’s failure state!). But that’s at least a limited amount of damage inflicted on your own personal development experience.</p>
 
       <p>What’s worse is when systems are prematurely disintegrated and broken into services or, even worse, microservices. This drive frequently starts from the misconception that if you want a Modern Internet Application, you’ll simply have to build the systems many times over: Once on the server side, once on the JavaScript MVC client-side, once for each of the native mobile applications, and so forth. This is not a law of nature, it needn’t be so.</p>
 
