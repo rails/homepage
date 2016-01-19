@@ -1,0 +1,202 @@
+/*--------------------------------------------------
+GENERAL
+--------------------------------------------------*/
+
+body {
+  font-family: Georgia, sans-serif;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+small { font-size: 1rem; }
+
+img { border: 0; }
+
+a { color: #cc0000; text-decoration: none; }
+
+h1 {
+  font-weight: normal;
+  line-height: 2.8rem;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+
+.show-mobile { display: none; }
+
+/*--------------------------------------------------
+NAV
+--------------------------------------------------*/
+
+.logo { text-align: center; margin: 1rem 0; }
+.logo a { border: 0; }
+
+.nav { margin-top: 30px; width: 500px; float: right; font-size: 14px; }
+.nav ul { margin: 0; padding: 0; }
+.nav ul li { display: inline; list-style-type: none; margin-left: 30px; }
+.nav ul li.first { margin-left: 5px; }
+.nav ul li a { font-weight: bold; border-bottom: 2px solid #ff9999; }
+.nav ul li a:hover { color: #000; border-bottom: 2px solid #cc0000; }
+
+.back { margin: 4rem 0; text-align: center; font-size: 1rem; }
+
+/*--------------------------------------------------
+LAYOUT
+--------------------------------------------------*/
+
+section {
+  margin: 0 auto 2rem;
+  width: 700px;
+}
+
+section.more { overflow: hidden; text-align: center;}
+section.more figure img { width: 250px; height: 120px;}
+
+figure { margin: 0; }
+figure img { width: 375px; height: 375px; }
+figure.right { float: right; margin-right: -5rem; }
+figure.left { float:left; margin-left: -5rem; }
+
+.version {
+  text-align: center;
+  overflow: hidden;
+  margin: 3rem auto;
+}
+
+.version a {
+  font-size: 1.3rem;
+  color: white;
+  border-bottom: 4px solid #ff9999;
+  background-color: #cc0000;
+  padding: 1.3rem 2.3rem;
+  border-radius: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 3px double #ccc;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.footer p { line-height: 0.5rem; }
+
+/*--------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------*/
+
+.rails-core {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.person {
+  display: inline-block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.person a, .person em {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.person em { color: #777; }
+
+.meta {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  line-height: 1.25rem;
+}
+
+figure.contributor {
+  background-size: 700px 420px;
+  background-image: url('images/rails-core.jpg');
+  width: 140px;
+  height: 0;
+  padding-top: 140px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.david { background-position: 0 0; }
+.jeremy { background-position: 560px 0; }
+.santiago { background-position: 420px 0; }
+.aaron { background-position: 280px 0; }
+.xavier { background-position: 140px 0; }
+.rafael { background-position: 0 280px; }
+.andrew { background-position: 560px 280px; }
+.guillermo { background-position: 420px 280px; }
+.carlos { background-position: 280px 280px; }
+.yves { background-position: 140px 280px; }
+.godfrey { background-position: 0 560px; }
+.matthew { background-position: 560px 560px; }
+
+figure p { margin: 0; }
+
+/*----------------------------------------------------
+RESPONSIVE CSS
+----------------------------------------------------*/
+
+/* iPhone */
+@media only screen and (max-device-width: 480px) {
+  .container { width: auto; margin: 0; }
+  .mobile-center { text-align: center; }
+  section { width: auto; }
+  .version { margin: 0 auto; }
+  .version a { padding: 1rem; }
+  .nav { width: 100%; margin: 20px 0 40px; overflow: hidden; text-align: center; }
+  .nav ul li, .nav ul li.first { margin: 15px; line-height: 2rem; }
+  .nav ul li.back { margin-right: 10px; }
+  section { padding: 10px;}
+  h1 { font-size: 32px; margin-top: 10px; }
+  h2 { font-size: 21px; font-weight: bold; margin-bottom: -18px; }
+  figure img { width: 380px; height: 380px; }
+  figure.right, figure.left { margin: 0; float: none; }
+  .show-mobile { display: block; }
+  .hide-mobile { display: none; }
+}
+
+/* iPad */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+}
