@@ -52,7 +52,7 @@ NAV
 
 .nav { margin-top: 30px; width: 500px; float: right; font-size: 14px; }
 .nav ul { margin: 0; padding: 0; }
-.nav ul li { display: inline; list-style-type: none; margin-left: 30px; }
+.nav ul li { display: inline; list-style-type: none; margin-left: 20px; }
 .nav ul li.first { margin-left: 5px; }
 .nav ul li a { font-weight: bold; border-bottom: 2px solid #ff9999; }
 .nav ul li a:hover { color: #000; border-bottom: 2px solid #cc0000; }
