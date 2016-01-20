@@ -168,6 +168,9 @@ RESPONSIVE CSS
 
 /* iPhone */
 @media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 18px;
+  }
   .container { width: auto; margin: 0; }
   .mobile-center { text-align: center; }
   section { width: auto; }
