@@ -1,0 +1,49 @@
+---
+title: "Ruby on Rails: Maintenance policy"
+---
+
+<div class="container">
+  <div class="logo">
+    <a href="/"><img src="images/rails-logo.svg" width="130" height="46" alt="Ruby on Rails"></a>
+  </div>
+
+  <section>
+    <h1>Maintenance policy</h1>
+
+    <figure class="right">
+      <img src="images/maintenance.png" alt="Maintenance">
+    </figure>
+
+    <p>
+      Support of the Rails framework is divided into four groups: New features, bug fixes, security issues, and severe security issues. They are handled as follows, all versions in X.Y.Z format.
+    </p>
+
+    <p>
+      <ul>
+        <li><b>Major X</b>: New features, will likely contain API changes. The difference between Rails' minor and major releases is the magnitude of breaking changes, and usually reserved for special occasions.</li>
+        <li><b>Minor Y</b>: New features, may contain API changes. Breaking changes are paired with deprecation notices in the previous minor or major release.</li>
+        <li><b>Patch Z</b>: Only bug fixes, no API changes, no new features. Except as necessary for security fixes.</li>
+      </ul>
+    </p>
+
+    <h2>New features</h2>
+    <p>New features are only added to the master branch and will not be made available in point releases.</p>
+
+    <h2>Bug fixes</h2>
+    <p>Only the latest release series will receive bug fixes. When enough bugs are fixed and its deemed worthy to release a new gem, this is the branch it happens from.</p>
+
+    <p>In special situations, where someone from the Rails core team agrees to support more series, they are included in the list of supported series.</p>
+
+    <p>Currently included series: 4.2.Z, 4.1.Z.</p>
+
+    <h2>Security issues</h2>
+    <p>See the <a href="security.html">security policy</a> for more details.</p>
+
+    <h2>Unsupported release series</h2>
+    <p>When a release series is no longer supported, it's your own responsibility to deal with bugs and security issues. We may provide backports of the fixes and publish them to git, however there will be no new versions released. If you are not comfortable maintaining your own versions, you should upgrade to a supported version.</p>
+
+    <p class="back">
+      <a href="/">&larr; Back to homepage</a>
+    </p>
+  </section>
+</div>
