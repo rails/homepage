@@ -22,11 +22,11 @@
         <img src="images/doctrine.png" alt="The Rails Doctrine">
       </figure>
 
-      <p>Ruby on Rails’ phenomenal rise to prominence owed much of its lift-off to novel technology and timing. But technological advantages erode over time, and good timing doesn’t sustain movements alone over the long term. So a broader explanation of how Rails has continued to not only stay relevant but to grow its impact and community is needed. I propose that the enduring enabler has been and remains its controversial doctrine.</p>
+      <p>Ruby on Rails’ phenomenal rise to prominence owed much of its lift-off to novel technology and timing. But technological advantages erode over time, and good timing doesn’t sustain movements alone over the long term. So a broader explanation of how Rails has continued to stay relevant and to grow its impact and community is needed. I propose the reason for this success has been and remains its controversial doctrine.</p>
 
       <p>This doctrine has evolved over the past decade, but most of its strongest pillars are also the founding ones. I make no claim to the fundamental originality of these ideas. The chief accomplishment of Rails was to unite and cultivate a strong tribe around a wide set of heretical thoughts about the nature of programming and programmers.</p>
 
-      <p>With all that ado, here follows the eight most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
+      <p>What follows are the eight most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
 
       <p>
         <ol>
@@ -43,7 +43,7 @@
 
       <h2 id="optimize-for-programmer-happiness">Optimize for programmer happiness</h2>
 
-      <p>There would be no Rails without Ruby, so its only fitting that the first doctrinal pillar is lifted straight from the core motivation for creating Ruby.</p>
+      <p>There would be no Rails without Ruby, so its only fitting that the first pillar is lifted straight from the core motivation for creating Ruby.</p>
 
       <p>Ruby’s original heresy was indeed to place the happiness of the programmer on a pedestal. Above many other competing and valid concerns that had driven programming languages and ecosystems before it.</p>
 
@@ -51,17 +51,17 @@
 
       <p>Ruby was different because it valued different things. And most of those things were in service of this yearning for programmer happiness. A pursuit that brought it at odds with not only most other programming environments, but also the mainstream perception of what a programmer was and how they were supposed to act.</p>
 
-      <p>Ruby took to not only recognize but accommodate and elevate programmer feelings. Whether they be of inadequacy, whimsy, or joy. Matz jumped implementational hurdles of astounding complexity to make the machine appear to smile at and flatter its human co-conspirator. Ruby is full of optical illusions where that which seems simple, clear, and beautiful to our mind’s eye actually is an acrobatic mess of wires under the hood. These choices were not free (ask the JRuby crew about trying to reverse-engineer this magical music box!), which is precisely why they’re so commendable.</p>
+      <p>Ruby sought to not only recognize but accommodate and elevate programmer feelings. Whether they be of inadequacy, whimsy, or joy. Matz jumped implementational hurdles of astounding complexity to make the machine appear to smile at and flatter its human co-conspirator. Ruby is full of optical illusions where what seems simple, clear, and beautiful to our mind’s eye actually is an acrobatic mess of wires under the hood. These choices were not free (ask the JRuby crew about trying to reverse-engineer this magical music box!), which is precisely why they’re so commendable.</p>
 
-      <p>It was this dedication to an alternate vision for programming and programmers that sealed my love affair with Ruby. It wasn’t just ease of use, it wasn’t just aesthetics of blocks, it was no one single technical achievement. It was a vision. A counter culture. A place for the misfits of the existing professional programming mold to belong and associate with the like of mind.</p>
+      <p>It was this dedication to an alternate vision for programming and programmers that sealed my love affair with Ruby. It wasn’t just ease of use, it wasn’t just aesthetics of blocks, it was no one single technical achievement. It was a vision. A counter culture. A place for the misfits of the existing professional programming mold to belong and associate with others like them.</p>
 
-      <p>I’ve described this discovery of Ruby in the past as finding a magical glove that just fit my brain perfectly. Better than I had ever imagined any glove could ever fit. But it was even more than that. It was the event that marked my own personal transition from ‘doing programming because I needed programs’ to ‘doing programming because I fell in love with it as a mode of intellectual exercise and expression’. It was finding a <a href="http://www.amazon.com/Flow-Harper-Perennial-Modern-Classics-ebook/dp/B000W94FE6/">fountain of flow</a> and being able to turn it on at will. For anyone familiar with Csikszentmihalyi’s work, the impact of this is hard to overstate.</p>
+      <p>I’ve described this discovery of Ruby in the past as finding a magical glove that just fit my brain perfectly. Better than I had ever imagined any glove could ever fit. But it was even more than that. It was the event that marked my own personal transition from ‘doing programming because I needed programs’ to ‘doing programming because I fell in love with it as a mode of intellectual exercise and expression’. It was finding a <a href="http://www.amazon.com/Flow-Harper-Perennial-Modern-Classics-ebook/dp/B000W94FE6/">fountain of flow</a> and being able to turn it on at will. For those familiar with Csikszentmihalyi’s work, the impact of this experience is hard to overstate.</p>
 
       <p>I’m not exaggerating when I say that Ruby transformed me and set the course for my life’s work. So deep was the revelation. It imbued me with a calling to do missionary work in service of Matz’s creation. To help spread this profound creation and its benefits.</p>
 
       <p>Now I can imagine most of you shaking your heads with incredulity. I don’t blame you. If someone had described the experience above to me when I was still living under the “programming is just a tool” paradigm, I too would have shook my head. And then I would probably have laughed at the over-the-top use of religious language. But for this to be a truthful account, it also has to be honest, even if that’s off-putting to some or even most.</p>
 
-      <p>Anyway, what did this mean for Rails and how does this principle continue to guide its evolution? To answer that, I think it’s instructive to look at another principle that was often used to describe Ruby in the early days: The Principle of Least Surprise. Ruby should behave how you’d expect it to. This is easily described with a contrast to Python:</p>
+      <p>Anyway, what did this mean for Rails and how does this principle continue to guide its evolution? To answer that, I think it’s instructive to look at another principle that was often used to describe Ruby in the early days: The Principle of Least Surprise (PoLS). Ruby should behave how you’d expect it to. This is easily described with a contrast to Python:</p>
 
       <p>
         <code><pre>
@@ -79,9 +79,9 @@
 
       <p>The reason PoLS fell out of favor with the Ruby community was that this principle is inherently subjective. Least surprising to whom? Well, to Matz. And people who are surprised in the same way as him. As the Ruby community grew, and the ratio of people who were surprised by different things than Matz grew with it, this became a source of fruitless bike-shedding on the mailing lists. So the principle faded to the background, lest to invite more debates going nowhere over whether person X was surprised by behavior Y or not.</p>
 
-      <p>So again, what does this have to do with Rails? Well, Rails has been designed with a similar principle to Principle of Least Surprise (To Matz). The Principle of The Bigger Smile (of DHH), which is just what it says on the tin: APIs designed with great attention paid to whatever would make me smile more and broader.  When I write it out like this, that sounds almost comically narcissistic, and even I find hard to argue against that first impression.</p>
+      <p>So again, what does this have to do with Rails? Well, Rails has been designed with a similar principle to Principle of Least Surprise (To Matz). The Principle of The Bigger Smile (of DHH), which is just what it says on the tin: APIs designed with great attention paid to whatever would make me smile more and broader. When I write it out like this, that sounds almost comically narcissistic, and even I find hard to argue against that first impression.</p>
 
-      <p>But creating something like Ruby or Rails is at least at its outset a deeply narcissistic endeavor. Both projects sprung from the mind of a singular creator. But perhaps I’m projecting my own motivations onto Matz here, so let me narrow the scope of my proclamation to that which I know: I created Rails for me. To make me smile, first and foremost. It’s utility was to many degrees subservient to its ability to make me enjoy my life more. To enrich my daily toil of wrangling requirements and requests for web information systems.</p>
+      <p>Creating something like Ruby or Rails is at least at its outset a self-serving endeavor. Both projects sprung from the mind of a singular creator. But perhaps I’m projecting my own motivations onto Matz here, so let me narrow the scope of my proclamation to that which I know: I created Rails for me. To make me smile, first and foremost. It’s utility was to many degrees subservient to its ability to make me enjoy my life more. To enrich my daily toil of wrangling requirements and requests for web information systems.</p>
 
       <p>Like Matz, I at times went to silly lengths to serve my principle. One example is the Inflector, a class that understands just enough of the patterns and irregularities of the English language to map a Person class to a People table, Analysis to Analyses, and simply Comment to Comments. This behavior is now accepted as an unquestioned element of Rails, but the fires of controversy raged with great intensity in the early days when we were still coalescing the doctrine and its importance.</p>
 
@@ -97,30 +97,30 @@
 
       <h2 id="convention-over-configuration">Convention over Configuration</h2>
 
-      <p>One of the early productivity mottos of Rails went: “You’re not a beautiful and unique snowflake”. It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.</p>
+      <p>One of the early productivity mottos of Rails went: “You’re not a beautiful and unique snowflake”. It postulates that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.</p>
 
-      <p>Who cares what format your database primary keys are described by? Does it really matter whether its “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of  recurrent deliberation? No.</p>
+      <p>Who cares what format your database primary keys are described by? Does it really matter whether its “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of recurrent deliberation? No.</p>
 
       <p>Part of the Rails’ mission is to swing its machete at the thick, and ever growing, jungle of recurring decisions that face developers creating information systems for the web. There are thousands of such decisions that just need to be made once, and if someone else can do it for you, all the better.</p>
 
-      <p>Not only does the transfer of configuration to convention free us from deliberation, it also provides a lush field to grow deeper abstractions. If we can depend on a Person class mapping to people table, we can use that same inflection to map a association declared as has_many :people to look for a Person class. The power of good conventions is that they pay dividends across a wide spectrum of use.</p>
+      <p>Not only does the transfer of configuration to convention free us from deliberation, it also provides a lush field to grow deeper abstractions. If we can depend that a Person class maps to the people table, we can use that same inflection to map an association declared as has_many :people to look for a Person class. The power of good conventions is that they pay dividends across a wide spectrum of use.</p>
 
-      <p>But beyond the productivity gains for experts, conventions also lower the barriers of entry for beginners. There are so many conventions in Rails that a beginner doesn’t even need to know about, but can just benefit from in ignorance. It’s possible to create great applications without knowing why everything is the way it is.</p>
+      <p>Beyond the productivity gains for experts, conventions also lower the barriers of entry for beginners. There are so many conventions in Rails that a beginner doesn’t even need to know about, but can just benefit from in ignorance. It’s possible to create great applications without knowing why everything works.</p>
 
-      <p>That’s not possible if your framework is merely a thick textbook and your new application a blank piece of paper. It takes immense effort to even figure out where and how to start. Half the battle of getting going is finding a thread to pull.</p>
+      <p>That’s not possible if your framework is merely a thick textbook and your new application a blank piece of paper. It takes immense effort to even figure out where and how to start. Half the battle of starting is to find a thread to pull.</p>
 
-      <p>The same goes even when you understand how all the pieces go together. When there’s an obvious next step for every change, we can scoot through the many parts of an application that is the same or very similar to all the other applications that went before it. A place for everything and everything in its place. Constraints liberate even the most able minds.</p>
+      <p>The same goes even when you understand how all the pieces go together. When there’s an obvious next step for every change, we can scoot through the many parts of an application that is the same or very similar to all the other applications that went before it. There is a place for everything and everything is in its place. Constraints liberate even the most able minds.</p>
 
       <p>As with anything, though, the power of convention isn’t without peril. When Rails makes it so trivial to do so much, it is easy to think every aspect of an application can be formed by precut templates. But most applications worth building have some elements that are unique in some way. It may only be 5% or 1%, but it’s there.</p>
 
-      <p>The hard part is knowing when to stray from convention. When are the deviating particulars grave enough to warrant an excursion? I contend that most impulses to be a beautiful and unique snowflake are ill considered, and that the cost of going off the Rails is under appreciated, but just enough of them won’t be that you need to examine all of them carefully.</p>
+      <p>The hard part is knowing when to stray from convention. When are the deviating particulars grave enough to warrant an excursion? I contend that most impulses to be a beautiful and unique snowflake are ill considered, and the cost of going off the Rails is under appreciated, but just enough of them won’t be that you need to examine all of them carefully.</p>
 
 
       <h2 id="omakase">The menu is omakase</h2>
 
       <p>How do you know what to order in a restaurant when you don’t know what’s good? Well, if you let the chef choose, you can probably assume a good meal, even before you know what “good” is. That is omakase. A way to eat well that requires you neither be an expert in the cuisine or blessed with blind luck at picking in the dark.
 
-      <p>For programming, the benefits of this practice, letting others assemble your stack, is similar to those we derive from Convention over Configuration, but at a higher level. Where CoC is occupied with how we best use of individual frameworks, omakase is concerned with <em>which</em> frameworks, and how they fit together.
+      <p>For programming, the benefits of this practice, letting others assemble your stack, is similar to those we derive from Convention over Configuration (CoC), but at a higher level. Where CoC is occupied with how we best use of individual frameworks, omakase is concerned with <em>which</em> frameworks, and how they fit together.
 
       <p>This is at odds with the revered programming tradition of presenting available tools as individual choices, and to bestow the individual programmer privilege (and burden!) of deciding.
 
@@ -128,7 +128,7 @@
 
       <p>It is a problem similar to that of the diner in a restaurant. And like picking each course in an eight-set meal, picking each individual library or framework is not a job done in isolation. The objective in both cases is to consider the whole evening or system.
 
-      <p>So with Rails we decided to diminish one good, a programmer’s individual privilege to chose each tool in their box, for a greater one: A better tool box for all. The dividends are legion:
+      <p>So with Rails we decided to diminish one good, a programmer’s individual privilege to chose each tool in their box, for a greater one: A better tool box for all. The dividends are many:
 
       <p><ol><li><b>There’s safety in numbers:</b> When most people are using Rails in the same default ways, we have a shared experience. This common ground makes it much easier to teach and help people. It lays a foundation for debate on approach. We all watched the same show last night at 7, so we can talk about it the next day. It fosters a stronger sense of community.</li>
 
@@ -164,7 +164,7 @@
 
       <p>This applies to the many sub-languages of Rails as well. We don’t try to shield you that much from having to learn, say, JavaScript for the view or SQL for the occasional complicated query. At least not to reach the peaks of possibilities.</p>
 
-      <p>The way to alleviate some of that learning burden is to simply just make it easy to get started, make something of real value, before you understand every single aspect of the framework. We have a rush to Hello World for this reason. Your table already prepared and an appetizer served.</p>
+      <p>The way to alleviate some of that learning burden is to simply just make it easy to get started, make something of real value, before you understand every single aspect of the framework. We have rush to Hello World for this reason. Your table ia already prepared and an appetizer served.</p>
 
       <p>The thinking is that by giving something of real value early, we’ll encourage the practitioners of Rails to level-up quickly. Accept their journey of learning as a joy, not an obstacle.</p>
 
@@ -254,17 +254,17 @@
 
       <p>That’s not a license to inflict needless or excessive hurt willy nilly. The Great Rails Migration of 2.x to 3 still lingers in the scar tissue of many who were around for that. It was a tough one. A serious upheaval that left many behind in 2.x land for a long time, some soured beyond convincing. But, in the grand scheme of things, it was still worth it.</p>
 
-      <p>Those are the hard bargains we have to continue to make. Is Rails going to be better off in five years for the changes we make today? Is Rails going to be better off for adopting another problem domain, like job queuing or WebSockets, in years to come? If yes, then let’s suck it up and do the work.</p>
+      <p>These are the hard decisions we have to continue to make. Is Rails going to be better off in five years for the changes we make today? Is Rails going to be better off for adopting another problem domain, like job queuing or WebSockets, in years to come? If yes, then let’s suck it up and do the work.</p>
 
       <p>This work isn’t just something that needs to happen in Rails itself, but also in the larger Ruby community. Rails should be at the frontier of helping Ruby’s progress by driving its constituents to adopt later versions faster. </p>
 
       <p>We’ve done very well at this so far. From when I started, we’ve moved through Ruby 1.6, 1.8, 1.9, 2.0, 2.1, 2.2, and now onto 2.3. Lots of major changes along the way, but Rails was there to have Ruby’s back, and help everyone get with the program faster. That’s in part the privilege and obligation Rails serves as the major popularizer of Ruby.</p>
 
-      <p>This too is true for the auxiliary tools of the chain. Bundler was once a controversial idea, but through Rails insistence that it be a cornerstone of a shared future, it’s today just taken for granted. The same is true for things like the asset pipeline and Spring, the persistent command process. All three of these went through, or are still going through, growing pains, but the obviousness of their value in the long term helped us push through that.</p>
+      <p>This too is true for the auxiliary tools of the chain. Bundler was once a controversial idea, but through Rails' insistence that it be a cornerstone of a shared future, it’s today just taken for granted. The same is true for things like the asset pipeline and Spring, the persistent command process. All three of these went through, or are still going through, growing pains, but the obviousness of their value in the long term helped us push through that.</p>
 
-      <p>Progress is ultimately mostly about people and their willingness to push change. This is why there are no lifetime seats in groups like Rails Core or Rails Committers. Both groups are for those who are actively working on making progress for the framework. For some, their stake in such progress may last just a few years, and we will forever be grateful for their service, and for others it may last decades.</p>
+      <p>Progress is ultimately mostly about people and their willingness to push change. This is why there are no lifetime seats in groups like Rails Core or Rails Committers. Both groups are for those who are actively working on making progress for the framework. For some, their stake in such progress may last just a few years and for others it may last decades. For both groups, we will forever be grateful for their service.</p>
 
-      <p>Likewise, it’s why it’s so important for us to continue to welcome and encourage new members of the community. We need fresh blood and fresh ideas to make better progress.</p>
+      <p>For this reason, it's so important for us to continue to welcome and encourage new members of the community. We need fresh blood and fresh ideas to continue making progress.</p>
 
 
       <h2 id="big-tent">Push up a big tent</h2>
@@ -277,13 +277,13 @@
 
       <p>The continued success of RSpec, a DSL for testing I’ve often expressed grave discontent with, is perfect proof. I can rant until I’m blue in the face of why I don’t think it’s the way to go, and it can still blossom and prosper. That point is the far more important one!</p>
 
-      <p>The same is true for the advent of Rails as an API. While my personal focus and dedication is to the integrated system that includes the view, there’s undoubtedly room for Rails to do well with people who do want to distribute their clients and servers upfront. We should embrace inasmuch it can coexist as a secondary mission, and I believe it surely can.</p>
+      <p>The same is true for the advent of Rails as an API. While my personal focus and dedication is to the integrated system that includes the view, there’s undoubtedly room for Rails to serve people who want to distribute their clients and servers upfront. We should embrace this desire inasmuch it can coexist as a secondary mission, and I believe it surely can.</p>
 
-      <p>Having a big tent doesn’t mean trying to be all things to all people, though. It just means you welcome all people to your party, and allow them to bring their own drinks. We need to lose none of our soul or values by offering others to join us, and we may well learn how to mix a new delicious drink or two.</p>
+      <p>Having a big tent doesn’t mean trying to be all things to all people, though. It just means you welcome all people to your party, and allow them to bring their own drinks. We need to lose none of our soul or values by inviting others to join us, and we may well learn how to mix a new delicious drink or two.</p>
 
-      <p>This doesn’t come for free. It requires work to be welcoming. Especially if your goal isn’t just to attract more people who are just like the ones who are already part of the community. Lowering the barriers to entry is work we should always take seriously.</p>
+      <p>This approach doesn’t come for free. It requires work to be welcoming. Especially if your goal isn’t just to attract more people who are just like the ones who are already part of the community. Lowering the barriers to entry is work we should always take seriously.</p>
 
-      <p>You never know when the next person who starts just fixing a misspelling in the documentation ends up implementing the next great feature. But you stand a chance to find out if smile and say thank you for whatever small contribution that gets the motivation flowing.</p>
+      <p>You never know when the next person who starts just fixing a misspelling in the documentation ends up implementing the next great feature. But you stand a chance to find out if you smile and say thank you for whatever small contribution that gets the motivation flowing.</p>
 
       <p class="back">
         <a href="/">&larr; Back to homepage</a>
