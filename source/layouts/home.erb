@@ -14,15 +14,6 @@
   </head>
 
   <body class="<%= page_classes %>">
-
-    <div class="container">
-      <div class="logo">
-        <a href="/">
-          <%= image_tag 'rails-logo.svg', width: "130", height: "46", alt: "Ruby on Rails" %>
-        </a>
-      </div>
-
-      <%= yield %>
-    </div>
+    <%= yield %>
   </body>
 </html>

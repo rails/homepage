@@ -137,7 +137,7 @@ CONTRIBUTORS
 
 figure.contributor {
   background-size: 700px 420px;
-  background-image: url('images/rails-core.jpg');
+  background-image: url('/images/rails-core.jpg');
   width: 140px;
   height: 0;
   padding-top: 140px;

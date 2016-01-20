@@ -9,6 +9,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+page '/', layout: :home
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -22,6 +24,7 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
   activate :directory_indexes
+  activate :relative_assets
 end
 
 ###
@@ -38,6 +41,7 @@ end
 # Build-specific configuration
 configure :build do
   activate :directory_indexes
+  activate :relative_assets
   # Minify CSS on build
   # activate :minify_css
 
