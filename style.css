@@ -17,6 +17,7 @@ small { font-size: 1rem; }
 img { border: 0; }
 
 a { color: #cc0000; text-decoration: none; }
+a:hover { text-decoration: underline;}
 
 h1 {
   font-weight: normal;
