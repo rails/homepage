@@ -2,6 +2,8 @@
 GENERAL
 --------------------------------------------------*/
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
   font-family: Georgia, serif;
   line-height: 2rem;
@@ -19,9 +21,10 @@ img { border: 0; }
 a { color: #cc0000; text-decoration: none; }
 
 h1 {
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   line-height: 2.8rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   color: black;
   margin-bottom: 1rem;
@@ -47,10 +50,16 @@ h2 {
 NAV
 --------------------------------------------------*/
 
-.logo { text-align: center; margin: 1rem 0; }
+.logo { text-align: center; margin: 1rem 0 2rem; }
 .logo a { border: 0; }
 
-.nav { margin-top: 30px; width: 500px; float: right; font-size: 14px; }
+.nav {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 71px;
+  width: 500px;
+  float: right;
+  font-size: 14px;
+}
 .nav ul { margin: 0; padding: 0; }
 .nav ul li { display: inline; list-style-type: none; margin-left: 20px; }
 .nav ul li.first { margin-left: 5px; }
