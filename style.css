@@ -83,11 +83,11 @@ figure.left { float:left; margin-left: -5rem; }
 }
 
 .version a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
   border-bottom: 4px solid #ff9999;
   background-color: #cc0000;
-  padding: 1.3rem 2.3rem;
+  padding: 1.3rem 2rem;
   border-radius: 20px;
 }
 
