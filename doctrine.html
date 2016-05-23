@@ -17,7 +17,7 @@ permalink: /doctrine/
 
       <p>This doctrine has evolved over the past decade, but most of its strongest pillars are also the founding ones. I make no claim to the fundamental originality of these ideas. The chief accomplishment of Rails was to unite and cultivate a strong tribe around a wide set of heretical thoughts about the nature of programming and programmers.</p>
 
-      <p>With all that ado, here follows the eight most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
+      <p>With all that ado, here follows the nine most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
 
       <p>
         <ol>
@@ -26,6 +26,7 @@ permalink: /doctrine/
           <li><a href="#omakase">The menu is omakase</a></li>
           <li><a href="#no-one-paradigm">No one paradigm</a></li>
           <li><a href="#beautiful-code">Exalt beautiful code</a></li>
+          <li><a href="#beautiful-code">Provide sharp knives</a></li>
           <li><a href="#integrated-systems">Value integrated systems</a></li>
           <li><a href="#progress-over-stability">Progress over stability</a></li>
           <li><a href="#big-tent">Push up a big tent</a></li>
@@ -213,6 +214,37 @@ permalink: /doctrine/
 
       <p>But the flow and focus is subtlety different. In the first statement, the focus is on the collection. That’s our subject. In the second statement, the subject is clearly the person. There’s not much between the two statements in length, but I’ll contend that the second is far more beautiful and likely to make me smile when used in a spot where the condition is about the person.</p>
 
+      <h2 id="provide-sharp-knives">Provide sharp knives</h2>
+
+      <p>Ruby includes a lot of sharp knives in its drawer of features. Not by accident, but by design. The most famous is monkey patching: The power to change existing classes and methods.</p>
+
+      <p>This power has frequently been derided as simply too much for mere mortal programmers to handle. People from more restrictive environments used to imagine all sorts of calamities that would doom Ruby because of the immense trust the language showed its speakers with this feature.</p>
+
+      <p>If you can change anything, what is there to stop you from overwriting String#capitalize so that “something bold”.capitalize returns “Something Bold” rather than “Something bold”? That might work in your local application, but then break all sorts of auxiliary code that depend on the original implementation.</p>
+
+      <p>Nothing, is the answer. There’s nothing programmatically in Ruby to stop you using its sharp knives to cut ties with reason. We enforce such good senses by convention, by nudges, and through education. Not by banning sharp knives from the kitchen and insisting everyone use spoons to slice tomatoes.</p>
+
+      <p>Because the flip side of monkey patching is the power to do such feats of wonder as 2.days.ago (which returns a date two days back from the current). Now you might well think that’s a bad trade. That you’d rather lose 2.days.ago if it means preventing programmers from overwriting String#capitalize. If that’s your position, Ruby is probably not for you.</p>
+
+      <p>Yet it’d be hard even for people who would give up such freedom for some security that the power to change core classes and methods has doomed Ruby as a language. On the contrary, the language flourished exactly because it offered a different and radical perspective on the role of the programmer: That they could be trusted with sharp knives.</p>
+
+      <p>And not only trusted, but taught in the ways to use such capable tools. That we could elevate the entire profession by assuming most programmers would want to become better programmers, capable of wielding sharp knives without cutting off their fingers. That’s an incredibly aspirational idea, and one that runs counter to a lot of programmer’s intuition about other programmers.</p>
+
+      <p>Because it’s always about other programmers when the value of sharp knives is contested. I’ve yet to hear a single programmer put up their hand and say “I can’t trust myself with this power, please take it away from me!”. It’s always “I think other programmers would abuse this”. That line of paternalism has never appealed to me.</p>
+
+      <p>That brings us to Rails. The knives provided by the framework are not nearly as sharp as those offered with the language, but some are still plenty keen to cut. We will make no apologies for offering such tools as part of the kit. In fact, we should celebrate having enough faith in the aspirations of our fellow programmers to dare trust them.</p>
+
+      <p>Plenty of features in Rails have been contested over time as being “too much freedom”. But one example that’s currently in vogue is the feature of concerns. This is a thin layer of syntactic sugar around Ruby’s built-in feature of modules and is designed to allow a single class to encapsulate multiple related but independently understood concerns (hence the name).</p>
+
+      <p>The charge is that concerns provide programmers prone to bloat their objects with a whole new set of drawers to stuff their clutter in. And that’s true. Concerns can indeed be used like that.</p>
+
+      <p>But the grand fallacy is thinking that by <i>not</i> providing a feature like concerns, which when used by even mildly capable hands allows an eloquent partial separation of concepts, we’d put programmers on the path to architectural bliss. If you can’t be trusted to keep the kitchen sink out of your overstuffed concerns, you’re probably not going to end up with a shining beacon of elegance otherwise.</p>
+
+      <p>Programmers who haven’t learned to wield sharp knifes just aren’t going to make meringues yet. Operative word here: Yet. I believe that every programmer has a path, if not a right, to become fully capable Ruby and Rails programmers. And by capable, I mean knowledgeable enough to know when and how, accordingly to their context, they should use the different and sometimes dangerous tools in the drawers.</p>
+
+      <p>That does not abdicate a responsibility to help get them there. The language and the framework should be patient tutors willing to help and guide anyone to experthood. While recognizing that the only reliable course there goes through the land of mistakes: Tools used wrong, a bit of blood, sweat, and perhaps even some tears. There simply is no other way.</p>
+
+      <p>Ruby on Rails is an environment for chefs and those who wish to become chefs. You might start out doing the dishes, but you can work your way up to running the kitchen. Don’t let anyone tell you that you can’t be trusted with the best tool in the trade as part of that journey.</p>
 
       <h2 id="integrated-systems">Value integrated systems</h2>
 
