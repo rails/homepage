@@ -17,6 +17,7 @@ small { font-size: 1rem; }
 img { border: 0; }
 
 a { color: #cc0000; text-decoration: none; }
+a:hover { padding-bottom: 2px; border-bottom: 2px solid #cc0000; }
 
 h1 {
   font-weight: normal;
@@ -54,8 +55,8 @@ NAV
 .nav ul { margin: 0; padding: 0; }
 .nav ul li { display: inline; list-style-type: none; margin-left: 20px; }
 .nav ul li.first { margin-left: 5px; }
-.nav ul li a { font-weight: bold; border-bottom: 2px solid #ff9999; }
-.nav ul li a:hover { color: #000; border-bottom: 2px solid #cc0000; }
+.nav ul li a { padding-bottom: 1px; font-weight: bold; border-bottom: 2px solid #cc0000; }
+.nav ul li a:hover { color: #000; border-bottom: 2px solid #000; }
 
 .back { margin: 4rem 0; text-align: center; font-size: 1rem; }
 
@@ -89,6 +90,10 @@ figure.left { float:left; margin-left: -5rem; }
   background-color: #cc0000;
   padding: 1.3rem 2rem;
   border-radius: 20px;
+}
+
+.version a:hover {
+  opacity: 0.8;
 }
 
 .video-container {
