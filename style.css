@@ -17,7 +17,8 @@ small { font-size: 1rem; }
 img { border: 0; }
 
 a { color: #cc0000; text-decoration: none; }
-a:hover { padding-bottom: 2px; border-bottom: 2px solid #cc0000; }
+
+p a:hover { text-decoration: underline; }
 
 h1 {
   font-weight: normal;
@@ -94,6 +95,7 @@ figure.left { float:left; margin-left: -5rem; }
 
 .version a:hover {
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .video-container {
