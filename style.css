@@ -3,7 +3,7 @@ GENERAL
 --------------------------------------------------*/
 
 body {
-  font-family: Georgia, sans-serif;
+  font-family: Georgia, serif;
   line-height: 2rem;
   font-size: 1.3rem;
   background-color: white;
@@ -17,6 +17,8 @@ small { font-size: 1rem; }
 img { border: 0; }
 
 a { color: #cc0000; text-decoration: none; }
+
+p a:hover { text-decoration: underline; }
 
 h1 {
   font-weight: normal;
@@ -52,10 +54,10 @@ NAV
 
 .nav { margin-top: 30px; width: 500px; float: right; font-size: 14px; }
 .nav ul { margin: 0; padding: 0; }
-.nav ul li { display: inline; list-style-type: none; margin-left: 30px; }
+.nav ul li { display: inline; list-style-type: none; margin-left: 20px; }
 .nav ul li.first { margin-left: 5px; }
-.nav ul li a { font-weight: bold; border-bottom: 2px solid #ff9999; }
-.nav ul li a:hover { color: #000; border-bottom: 2px solid #cc0000; }
+.nav ul li a { padding-bottom: 1px; font-weight: bold; border-bottom: 2px solid #cc0000; }
+.nav ul li a:hover { color: #000; border-bottom: 2px solid #000; }
 
 .back { margin: 4rem 0; text-align: center; font-size: 1rem; }
 
@@ -83,12 +85,17 @@ figure.left { float:left; margin-left: -5rem; }
 }
 
 .version a {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: white;
   border-bottom: 4px solid #ff9999;
   background-color: #cc0000;
-  padding: 1.3rem 2.3rem;
+  padding: 1.3rem 2rem;
   border-radius: 20px;
+}
+
+.version a:hover {
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .video-container {
@@ -104,15 +111,6 @@ figure.left { float:left; margin-left: -5rem; }
     width: 100%;
     height: 100%;
 }
-
-.footer {
-  padding: 2rem 0;
-  border-top: 3px double #ccc;
-  line-height: 1.5rem;
-  text-align: center;
-}
-
-.footer p { line-height: 0.5rem; }
 
 /*--------------------------------------------------
 CONTRIBUTORS
@@ -168,6 +166,7 @@ figure.contributor {
 .yves { background-position: 140px 280px; }
 .godfrey { background-position: 0 560px; }
 .matthew { background-position: 560px 560px; }
+.kasper { background-position: 420px 140px; }
 
 figure p { margin: 0; }
 
@@ -177,6 +176,9 @@ RESPONSIVE CSS
 
 /* iPhone */
 @media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 1.2rem;
+  }
   .container { width: auto; margin: 0; }
   .mobile-center { text-align: center; }
   section { width: auto; }

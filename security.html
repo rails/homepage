@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Ruby on Rails: Security policy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="logo">
-      <a href="index.html"><img src="images/rails-logo.svg" width="130" height="46" alt="Ruby on Rails"></a>
-    </div>
+---
+layout: page
+title: Security policy
+permalink: /security/
+---
 
     <section>
       <h1>Security policy</h1>
 
       <figure class="right">
-        <img src="images/security.png" alt="Security.">
+        <img src="/images/security.png" alt="Security.">
       </figure>
 
       <p>Ruby on Rails takes web security very seriously. This means including features to protect application makers from common issues like CRSF, Script Injection, SQL Injection, and the like. But it also means a clear policy on how to report vulnerabilities and receive updates when patches to those are released.</p>
 
-      <h2>Supported versions</h1>
+      <h2>Supported versions</h2>
 
-      <p>For major security issues, the current release series, the next most recent one, and the last additional major series will receive patches and new versions. This is currently 4.2.x, 4.1.x, 3.2.x.</p>
+      <p>For major security issues, the current release series, the next most recent one, and the last additional major series will receive patches and new versions. This is currently 5.0.x and 4.2.x.</p>
 
-      <p>For minor security issues, the current release series and the next most recent one will receive patches and new versions. This is currently 4.2.x and 4.1.x.</p>
+      <p>For minor security issues, the current release series and the next most recent one will receive patches and new versions. This is currently 5.0.x and 4.2.x.</p>
 
       <p>When a release series is no longer supported, it’s your own responsibility to deal with bugs and security issues. We may provide backports of the fixes and publish them to git, however there will be no new versions released. If you are not comfortable maintaining your own versions, you should upgrade to a supported version.</p>
 
       <p>The classification of a security issue is determined by the Rails core team.</p>
 
 
-      <h2>Reporting a vulnerability</h1>
+      <h2>Reporting a vulnerability</h2>
 
       <p>All security bugs in rails should be reported through our <a href="https://hackerone.com/rails">bounty program page at HackerOne</a>. This will deliver a message to a subset of the core team who handle security issues. Your report will be acknowledged within 24 hours, and you’ll receive a more detailed response to your email within 48 hours indicating the next steps in handling your report.</p>
 
@@ -54,7 +44,7 @@
       <p>Please note, the rails core list and #rails-contrib are public areas. When escalating to that address please do not discuss your issue, simply say that you’re trying to get a hold of someone from the security team.</p>
 
 
-      <h2>Disclosure process</h1>
+      <h2>Disclosure process</h2>
 
       <p>
         <ol>
@@ -71,19 +61,11 @@
       <p>This process can take some time, especially when coordination is required with maintainers of other projects. Every effort will be made to handle the bug in as timely a manner as possible, however it’s important that we follow the release process above to ensure that the disclosure is handled in a consistent manner.</p>
 
 
-      <h2>Receiving disclosures</h1>
+      <h2>Receiving disclosures</h2>
 
       <p>The best way to receive all the security announcements is to subscribe to the <a href="https://groups.google.com/d/forum/rubyonrails-security">Rails Security mailing list</a>. The mailing list is very low traffic, and it receives the public notifications the moment the embargo is lifted. If you produce packages of Ruby on Rails and require prior notification of vulnerabilities, you should be subscribed to <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a>.</p>
 
       <p>No one outside the core team, the initial reporter or <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a> will be notified prior to the lifting of the embargo. We regret that we cannot make exceptions to this policy for high traffic or important sites, as any disclosure beyond the minimum required to coordinate a fix could cause an early leak of the vulnerability.</p>
 
       <p>If you have any suggestions to improve this policy, please send an email to <a href="mailto:security@rubyonrails.org">security@rubyonrails.org</a>.</p>
-
-      <p class="back">
-        <a href="index.html">&larr; Back to homepage</a>
-      </p>
-
     </section>
-  </div>
-</body>
-</html>
