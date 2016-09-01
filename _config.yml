@@ -5,3 +5,5 @@ exclude:
 
 gems:
   - jekyll-redirect-from
+
+baseurl: /homepage
