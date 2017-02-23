@@ -49,11 +49,12 @@ h2 {
 NAV
 --------------------------------------------------*/
 
-.logo { text-align: center; margin: 1rem 0; }
-.logo a { border: 0; }
+#nav-logo img { width: 130px; margin-top: 60px; }
+#nav-logo:hover { opacity: 0.7; }
 
-.nav { margin-top: 30px; width: 500px; float: right; font-size: 14px; }
-.nav ul { margin: 0; padding: 0; }
+.nav { margin-left: 130px; }
+.nav { font-size: 15px; }
+.nav ul { margin: 0; padding: 0; float: right; margin-top: 80px; }
 .nav ul li { display: inline; list-style-type: none; margin-left: 20px; }
 .nav ul li.first { margin-left: 5px; }
 .nav ul li a { padding-bottom: 1px; font-weight: bold; border-bottom: 2px solid #cc0000; }
