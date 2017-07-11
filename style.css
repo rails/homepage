@@ -37,6 +37,15 @@ h2 {
   margin-bottom: -0.5rem;
 }
 
+h4 {
+  font-weight: normal;
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  color: black;
+  margin-bottom: 1rem;
+}
+
 .container {
   width: 960px;
   margin: 0 auto 40px;
