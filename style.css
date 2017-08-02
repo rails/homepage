@@ -171,43 +171,6 @@ figure.contributor {
 
 figure p { margin: 0; }
 
-/*----------------------------------------------------
-RESPONSIVE CSS
-----------------------------------------------------*/
-
-/* iPhone */
-@media only screen and (max-device-width: 480px) {
-  body {
-    font-size: 1.2rem;
-  }
-  .container { width: auto; margin: 0; }
-  .mobile-center { text-align: center; }
-  section { width: auto; }
-  .version { margin: 0 auto; }
-  .version a { padding: 1rem; }
-  .nav { width: 100%; margin: 20px 0 40px; overflow: hidden; text-align: center; }
-  .nav ul li, .nav ul li.first { margin: 15px; line-height: 2rem; }
-  .nav ul li.back { margin-right: 10px; }
-  section { padding: 10px;}
-  h1 { font-size: 32px; margin-top: 10px; }
-  h2 { font-size: 21px; font-weight: bold; margin-bottom: -18px; }
-  figure img { width: 380px; height: 380px; }
-  figure.right, figure.left { margin: 0; float: none; }
-  .show-mobile { display: block; }
-  .hide-mobile { display: none; }
-}
-
-/* iPad */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-}
-
-select::-ms-expand {
-        display: none;
-    }
-
 /*--------------------------------------------------
 LANGUAGE SWITCHER
 --------------------------------------------------*/
@@ -217,6 +180,12 @@ LANGUAGE SWITCHER
   position: absolute;
   top: 30px;
   right: 50px;
+}
+
+.language__item {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Georgia, serif;
 }
 
 .select__wrapper .language__items {
@@ -232,8 +201,6 @@ LANGUAGE SWITCHER
   -webkit-appearance: none;
   outline: none;
   border-radius: 0;
-  font-size: 1rem;
-  font-family: Georgia, serif;
   margin-top: 5px;
   color: #000;
   border-bottom: 4px solid rgba(0,0,0,.666);
@@ -242,15 +209,13 @@ LANGUAGE SWITCHER
 }
 
 .select__wrapper > .language__item {
-  width: 100px;
+  width: 120px;
   height: 100%;
   -moz-appearance: none;
   -webkit-appearance: none;
   outline: none;
   border-radius: 0;
-  font-size: 1rem;
   padding: 0rem 1.2rem;
-  font-family: Georgia, serif;
 }
 
 .select__wrapper > .language__item.active {
@@ -282,6 +247,8 @@ LANGUAGE SWITCHER
 }
 
 .select__wrapper.active > .language__items > .language__item > a {
+  display: block;
+  width: 76.666%;
   color: #000;
 }
 
@@ -292,3 +259,48 @@ LANGUAGE SWITCHER
 .select__wrapper.active > .language__items > .language__item > a {
   padding: 0rem 1.2rem;
 }
+
+/*----------------------------------------------------
+RESPONSIVE CSS
+----------------------------------------------------*/
+
+/* iPhone */
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .container { width: auto; margin: 0; }
+  .mobile-center { text-align: center; }
+  section { width: auto; }
+  .version { margin: 0 auto; }
+  .version a { padding: 1rem; }
+  .nav { width: 100%; margin: 20px 0 40px; overflow: hidden; text-align: center; }
+  .nav ul li, .nav ul li.first { margin: 15px; line-height: 2rem; }
+  .nav ul li.back { margin-right: 10px; }
+  section { padding: 10px;}
+  h1 { font-size: 32px; margin-top: 10px; }
+  h2 { font-size: 21px; font-weight: bold; margin-bottom: -18px; }
+  figure img { width: 380px; height: 380px; }
+  figure.right, figure.left { margin: 0; float: none; }
+  .show-mobile { display: block; }
+  .hide-mobile { display: none; }
+
+  .select__wrapper { display: block; position: inherit; }
+  .select__wrapper::before { top: 100px; right: 40px; }
+  .select__wrapper.active:before { top: 100px; }
+  .select__wrapper > .language__item { width: 80%; margin: 0 auto; }
+  .select__wrapper > .language__item.active { border-radius: 6px; }
+  .select__wrapper .language__items { width: 90%; margin: 10px auto; }
+}
+
+/* iPad */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .select__wrapper { right: 0px; }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+}
+
+select::-ms-expand {
+        display: none;
+    }
