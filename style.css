@@ -283,7 +283,7 @@ RESPONSIVE CSS
   .version { margin: 0 auto; }
   .version a { padding: 1rem; }
   .nav { width: 100%; margin: 20px 0 40px; overflow: hidden; text-align: center; }
-  .nav ul li, .nav ul li.first { margin: 15px; line-height: 2rem; }
+  .nav ul li, .nav ul li.first { margin: 5px; line-height: 2rem; display: inline-block; }
   .nav ul li.back { margin-right: 10px; }
   section { padding: 10px;}
   h1 { font-size: 32px; margin-top: 10px; }
