@@ -85,4 +85,24 @@ permalink: /doctrine/es
       <p>Pero mientras que la búsqueda de la felicidad es difícil de medir en el nivel micro, es mucho más claro observar en el nivel macro. La comunidad de Ruby on Rails está llena de personas que están aquí precisamente por esta búsqueda. Se jactan de mejores, más vidas realizadas en el ámbito laboral. Es en este conjunto de emociones que la victoria es clara.</p>
 
       <p>Entonces, concluimos: la optimización para la felicidad es quizás la clave más formativa de Ruby on Rails. Seguirá siendo así en adelante.</p>
+
+      <h2 id="convention-over-configuration">Convención sobre configuración</h2>
+
+      <p>Uno de los primeros lemas de Rails fue: "No eres un hermoso y único copo de nieve". El lema decía que al abandonar la individualidad, es posible evitar la solución de problemas triviales y avanzar más rápidamente en áreas que son realmente importantes.</p>
+
+      <p>¿A quién le importa en qué formato se describen sus claves principales en la base de datos? ¿Es esto realmente importante cuando se trata de id, postId, posts_id o pid? ¿Es esta solución digna de discusión constante? No.</p>
+
+      <p>Parte de la misión de Rails es hacer girar un machete en la jungla densa y que está constante crecimiento de soluciones repetitivas que enfrentan los desarrolladores que crean sistemas de información para la web. Hay miles de decisiones de este tipo que solo deben tomarse una vez, y si alguien más puede hacerlo por usted, mucho mejor.</p>
+
+      <p>La transferencia de la configuración a la convención no solo nos libera de la discusión, también proporciona un campo exuberante para el crecimiento de abstracciones más profundas. Si tenemos la capacidad de usar la dependencia de la clase Persona en la tabla de personas, entonces podemos usar la misma transformación para mostrar la asociación, declarada como has_many: personas, para buscar la clase Persona. La fortaleza de las buenas convenciones es que generan dividendos en una amplia gama de usos.</p>
+
+      <p>Pero además de las ganancias en la productividad para los expertos, las convenciones también reducen las barreras de entrada para los novatos. En Rails, hay muchos convenciones que un novato ni siquiera necesita conocer, pero que simplemente puede beneficiarse de su propia ignorancia. Es posible crear grandes aplicaciones sin saber por qué todo funciona de esa manera.</p>
+
+      <p>Eso no es posible si su entorno de trabajo es simplemente un libro de texto grueso y su nueva aplicación es una hoja de papel en blanco. Se necesita un esfuerzo inmenso para averiguar dónde y cómo empezar. La mitad de la batalla para ponerse en marcha es encontrar un hilo del cual tirar.</p>
+
+      <p>Lo mismo ocurre incluso cuando entiendes cómo todas las piezas van juntas. Cuando hay un próximo paso obvio para cada cambio, podemos desplazarnos a través de las muchas partes de una aplicación que es igual o muy similar a todas las demás aplicaciones que la precedieron. Un lugar para cada cosa y cada cosa en su lugar. Las restricciones liberan incluso a las mentes más capaces.</p>
+
+      <p>Sin embargo, como con cualquier cosa, el poder de la convención no viene sin peligro. Cuando Rails hace que sea tan trivial hacer tanto, es fácil pensar que todos los aspectos de una aplicación pueden estar formados por plantillas pre-definidas. Pero la mayoría de las aplicaciones que vale la pena construir tienen algunos elementos que son únicos de alguna manera. Puede que solo sea el 5% o 1%, pero está ahí.</p>
+
+      <p>La parte más difícil es saber cuándo dejar las convenciones. ¿Cuándo son las razones lo suficientemente serias para justificar esta decisión? Sostengo que la mayoría de los requisitos previos para ser un hermoso y único copo de nieve son poco considerados, y el costo de desviarse de Rails está subestimado. De hecho, hay un precio y usted debe reflexionar profundamente.</p>
     </section>
