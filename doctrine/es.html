@@ -1,0 +1,88 @@
+---
+layout: doctrine
+title: Doctrina
+permalink: /doctrine/es
+---
+
+    <section lang="es">
+      <h1 style="margin-bottom: 0px">La Doctrina Rails</h1>
+      <p style="margin-top: 0"><small style="color: grey">Por David Heinemeier Hansson en Enero de 2016</small></p>
+
+      <figure class="right">
+        <img src="/images/doctrine.png" alt="La Doctrina Rails">
+      </figure>
+
+      <p>El fenomenal ascenso de Ruby on Rails a la prominencia se debió en gran parte a su despegue a la tecnología y el tiempo novedosos. Pero las ventajas tecnológicas se erosionan con el tiempo y el buen momento no sostiene los movimientos por sí solo a largo plazo. Por lo tanto, se necesita una explicación más amplia de cómo Rails no solo sigue siendo relevante, sino también para aumentar su impacto y comunidad. Propongo que el habilitador duradero ha sido y sigue siendo su doctrina controvertida.</p>
+
+      <p>Esta doctrina ha evolucionado durante la última década, pero la mayoría de sus pilares más fuertes también son los fundadores. No pretendo reivindicar la originalidad fundamental de estas ideas. El principal logro de Rails fue unir y cultivar una tribu fuerte en torno a un amplio conjunto de pensamientos heréticos sobre la naturaleza de la programación y los programadores.</p>
+
+      <p>Después de todo el preámbulo, aquí tienen los nueve pilares más importantes de la Doctrina Rails, tal como yo los percibo:</p>
+
+      <p>
+        <ol>
+          <li><a href="#optimize-for-programmer-happiness">Optimización para la felicidad del programador</a></li>
+          <li><a href="#convention-over-configuration">Convención sobre configuración</a></li>
+          <li><a href="#omakase">La carta omakase</a></li>
+          <li><a href="#no-one-paradigm">Ningún paradigma</a></li>
+          <li><a href="#beautiful-code">Exaltar código hermoso</a></li>
+          <li><a href="#provide-sharp-knives">Proporcionar cuchillos afilados</a></li>
+          <li><a href="#integrated-systems">Valora los sistemas integrados</a></li>
+          <li><a href="#progress-over-stability">Progreso sobre estabilidad</a></li>
+          <li><a href="#big-tent">Construir una gran tienda de acampar</a></li>
+        </ol>
+      </p>
+
+      <h2 id="optimize-for-programmer-happiness">Optimización para la felicidad del programador</h2>
+
+      <p>No habría Rails sin Ruby, por lo que es justo que el primer pilar doctrinal se levante directamente de la motivación central para crear Ruby.</p>
+
+      <p>La herejía original de Ruby era, de hecho, colocar la felicidad del programador en un pedestal. Por encima de muchas otras inquietudes válidas y de competencia que antes habían impulsado los lenguajes de programación y los ecosistemas.</p>
+
+      <p>Donde Python podría jactarse de que hay "una y, de preferencia, solo una forma de hacer algo", Ruby disfrutó de la expresividad y la sutileza. Donde Java defendió forzadamente a los programadores para protegerse de ellos mismos, Ruby incluyó una cuerda colgante en el kit de bienvenida. Cuando Smalltalk perforó la pureza del pasaje de mensajes, Ruby acumuló palabras clave y construyó con un apetito casi glotón.</p>
+
+      <p>Ruby era diferente porque valoraba cosas diferentes. Y la mayoría de esas cosas estaban al servicio de este anhelo por la felicidad del programador. Una búsqueda que lo puso en desacuerdo no solo con la mayoría de los otros entornos de programación, sino también con la percepción de lo que era un programador y cómo se suponía que deberían actuar.</p>
+
+      <p>Ruby no solo reconoció, sino que también acomodó y elevó los sentimientos de los programadores. Si son de insuficiencia, capricho o alegría. Matz saltó obstáculos de implementación de asombrosa complejidad para hacer que la máquina pareciera sonreír y halagar a su co-conspirador humano. Ruby está lleno de ilusiones ópticas en las que lo que parece simple, claro y hermoso a los ojos de nuestra mente es en realidad un lío acrobático de cables debajo del capó. Estas opciones no fueron libres (¡pregúntele al equipo de JRuby si está tratando de aplicar ingeniería inversa a esta caja de música mágica!), Por eso es que son tan encomiables.</p>
+
+      <p>Fue esta dedicación a una visión alternativa para la programación y los programadores lo que selló mi historia de amor con Ruby. No era solo la facilidad de su uso, no era solo la estética de los bloques, no era un solo logro técnico. Fue una visión. Una contracultura. Un lugar para que los desajustes del molde de programación profesional existente pertenezcan y se asocien con ideas afines.</p>
+
+      <p>He descrito este descubrimiento de Ruby en el pasado como encontrar un guante mágico que se ajusta perfectamente a mi cerebro. Mejor de lo que nunca hubiera imaginado que un guante pudiera caber. Pero fue incluso más que eso. Fue el evento que marcó mi propia transición personal de "hacer programación porque necesitaba programas" a "hacer programación porque me enamoré de ella como un modo de ejercicio y expresión intelectual". Fue encontrar una <a href="http://www.amazon.com/Flow-Harper-Perennial-Modern-Classics-ebook/dp/B000W94FE6/" target="_blank">fuente de flujo</a> y ser capaz encenderla a voluntad. Para cualquiera que esté familiarizado con el trabajo de Csikszentmihalyi, el impacto de esto es difícil de exagerar.</p>
+
+      <p>No exagero cuando digo que Ruby me transformó y estableció el rumbo para el trabajo de mi vida. Tan profunda fue la revelación. Me imbuyó con un llamado a hacer el trabajo misionero al servicio de la creación de Matz. Para ayudar a difundir esta creación profunda y sus beneficios.</p>
+
+      <p>Ahora puedo imaginar a la mayoría de ustedes sacudiendo la cabeza con incredulidad. No te culpo Si alguien me hubiera descrito la experiencia anterior cuando aún vivía bajo el paradigma de "la programación es solo una herramienta", yo también habría sacudido la cabeza. Y entonces probablemente me hubiera reído del uso excesivo del lenguaje religioso. Pero para que esto sea una cuenta veraz, también tiene que ser honesto, incluso si es desagradable para algunos o incluso para la mayoría.</p>
+
+      <p>De todos modos, ¿qué significó esto para Rails y cómo este principio continúa guiando su evolución? Para responder a eso, creo que es instructivo observar otro principio que se usaba a menudo para describir a Ruby en los primeros días: El principio de la menor sorpresa. Ruby debería comportarse como esperas que lo haga. Esto se describe fácilmente con un contraste con Python:</p>
+
+      <p>
+        <code><pre>
+    $ irb
+    irb(main):001:0> exit
+    $ irb
+    irb(main):001:0> quit
+
+    $ python
+    >>> exit
+    Use exit() or Ctrl-D (i.e. EOF) to exit</pre></code>
+      </p>
+
+      <p>Ruby acepta exit y quit para acomodar el deseo obvio del programador de salir de su consola interactiva. Python, por otro lado, instruye de manera pediátrica al programador cómo hacer correctamente lo que se solicita, a pesar de que obviamente sabe lo que significa (ya que muestra el mensaje de error). Ese es un ejemplo bastante claro, aunque pequeño, de PoLS.</p>
+
+      <p>La razón por la que PoLS cayó en desgracia para la comunidad Ruby, es su enfoque subjetivo. Pero sorprendentemente, ¿a quién cayó en desgracia? Bueno, a Matz. Y las personas que tambien se sorprenden de la misma manera que él. Tan pronto como la comunidad de Ruby expandió sus filas, la gente comenzó a preguntarse sobre varias cosas diferentes, lo cual fue el motivo de innumerables cartas.</p>
+
+      <p>Entonces, de nuevo, ¿qué tiene esto que ver con Rails? Bueno, Rails ha sido diseñado con un principio similar al Principio de Menos Sorpresa (Para Matz). El principio de la sonrisa más grande (de DHH), que es justo lo que describen sus cualidades: API diseñadas con gran atención a todo lo que me haría sonreír más y más. Cuando lo escribo así, suena casi cómicamente narcisista, e incluso me resulta difícil argumentar contra esa primera impresión.</p>
+
+      <p>Pero crear algo como Ruby o Rails es, al menos desde el principio, una tarea profundamente narcisista. Ambos proyectos surgieron de la mente de un creador singular. Pero quizás estoy proyectando mis propias motivaciones en Matz aquí, así que permítame limitar el alcance de mi proclamación a lo que sé: creé Rails para mí. Para hacerme sonreír, ante todo. Su utilidad estuvo subordinada en muchos grados a su capacidad para hacerme disfrutar más de mi vida. Para enriquecer mi trabajo diario de requisitos de solicitudes y solicitudes de sistemas de información web.</p>
+
+      <p>Al igual que Matz, a veces me esforzaba mucho para cumplir mi principio. Un ejemplo es el Inflector, una clase que comprende lo suficiente de los patrones e irregularidades del idioma inglés para asignar una clase de Persona a una tabla de Personas, Análisis a Análisis, y simplemente Comentario a Comentarios. Este comportamiento ahora se acepta como un elemento incuestionable de Rails, pero los fuegos de la controversia se desataron con gran intensidad en los primeros días cuando aún estábamos uniendo la doctrina y su importancia.</p>
+
+      <p>Otro ejemplo que requirió menos esfuerzo de implementación, pero provocó casi la misma consternación: Array#second hasta #fifth (y #forty_two para trolear). Estos alias fueron muy ofensivos para algunas personas que lamentaron el hecho de que por qué tantos adornos, para algo que también podría escribirse como Array#[1], Array#[2] (y Array#[ 41]).</p>
+
+      <p>Ambas soluciones me hacen sonreír hasta el día de hoy. Estoy feliz de escribir a la gente, tercero como un caso de prueba en la consola. No, esto no es lógico. No es eficaz. Pero me hace sonreír y seguir los principios para enriquecer mi vida, y ayuda a justificar mi involucración continua con Rails despues de 12 años.</p>
+
+      <p>A diferencia, por ejemplo, de la optimización del rendimiento, es difícil medir la optimización de la felicidad. Esto hizo que fuera casi anticientífica en su esencia, lo que para algunos lo hace menos importante, si no completamente frustrante. A los programadores se les enseña a discutir y operar con asuntos medibles, en los que se puede sacar una conclusión clara, donde A es categóricamente mejor que B.</p>
+
+      <p>Pero mientras que la búsqueda de la felicidad es difícil de medir en el nivel micro, es mucho más claro observar en el nivel macro. La comunidad de Ruby on Rails está llena de personas que están aquí precisamente por esta búsqueda. Se jactan de mejores, más vidas realizadas en el ámbito laboral. Es en este conjunto de emociones que la victoria es clara.</p>
+
+      <p>Entonces, concluimos: la optimización para la felicidad es quizás la clave más formativa de Ruby on Rails. Seguirá siendo así en adelante.</p>
+    </section>
