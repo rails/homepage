@@ -128,4 +128,33 @@ permalink: /doctrine/es
       </ol></p>
 
       <p>Porque incluso los programadores más expertos y capacitados que vienen y se quedan en Rails probablemente no se oponen a todos los asuntos del menú. (Si lo hicieran, no se habrían quedado con Rails). Así que eligen sus sustituciones con diligencia y luego continúan disfrutando del resto del stack compartido junto con todos los demás.</p>
+
+      <h2 id="no-one-paradigm">Ningún paradigma</h2>
+
+      <p>Hay un fuerte atractivo emocional para elegir una sola idea central y seguirla hasta la conclusión lógica como su base arquitectónica. Hay una pureza en tal disciplina, así que está claro por qué los programadores se sienten atraídos naturalmente por esta luz brillante.</p>
+
+      <p>Rails no es así. No es un solo corte perfecto de tela. Es una colcha. Un compuesto de muchas ideas diferentes e incluso paradigmas. Muchos que normalmente se verían en conflicto, si se contrastan solos y uno por uno. Pero eso no es lo que estamos tratando de hacer. No es un solo campeonato de ideas superiores donde se debe declarar un único ganador.</p>
+
+      <p>Tome las plantillas con las que creamos una vista en nuestro pastel Rails-MVC. Por defecto, todos los helpers que nos permiten extraer código de estas plantillas son simplemente un gran conjunto de metodos. Este es un solo namespace. ¡Oh, la sorpresa y el horror, es como una sopa de PHP!</p>
+
+      <p>Pero sostengo que PHP tenía razón cuando se trataba de presentar funciones individuales que rara vez necesitaban interactuar, como ocurre con mucha abstracción en las vistas. Y para este propósito, el namespace, el gran conjunto de metodos, no solo es una opción razonable, sino una excelente.</p>
+
+      <p>Esto no significa que no queramos ocasionalmente buscar algo más orientado a objetos al construir vistas. El concepto de Presenters, en el que envolvemos muchos métodos que son interdependientes entre sí y los datos que se encuentran bajo ellos, en ocasiones puede ser el antídoto perfecto para una sopa de métodos que se vuelven amargos por las dependencias. Pero, como regla general, resulta ser un caso raro, y no es común.</p>
+
+      <p>En comparación, generalmente tratamos el modelo en nuestro pastel de capas MVC como el bastión principal del enfoque orientada a objetos. Encontrar el nombre correcto para los objetos, aumentar la coherencia y reducir el acoplamiento es lo divertido del modelado de dominios. Es una capa muy diferente de la vista, por lo que adoptamos un enfoque diferente.</p>
+
+      <p>Pero incluso aquí no nos suscribimos al dogma de paradigma único. Las preocupaciones de Rails, la especialización de los mixins de Ruby, se utilizan a menudo para dar a los modelos individuales un área de covertura muy amplia. Esto encaja bien con el patrón Active Record al dar a los métodos en cuestión acceso directo a los datos y el almacenamiento con el que interactúan.</p>
+
+      <p>Incluso la base misma de Active Record ofende a algunos puristas. Estamos mezclando la lógica necesaria para interactuar con la base de datos directamente con el dominio y la lógica de negocios. ¡Qué combinación de límites! Sí, porque resultó ser una forma práctica de envolver una aplicación web que casi siempre tiene una conexión a la base de datos para mantener el estado del modelo de dominio.</p>
+
+      <p>Ser tan ideológicamente flexible es lo que permite a Rails abordar una amplia gama de problemas. La mayoría de los paradigmas individuales funcionan muy bien dentro una cierta porción del espacio problemático, pero se vuelven torpes o rígidos cuando se aplican más allá de su esfera natural de confort. Al aplicar muchos paradigmas superpuestos, cubrimos los flancos y protegemos la parte posterior. El framework final es mucho más fuerte y más capaz de lo que cualquier paradigma individual lo hubiera permitido.</p>
+
+      <p>Ahora, el costo de esta relación poliamorosa con los muchos paradigmas de la programación es una sobrecarga conceptual. No es suficiente saber la programación orientada a objetos para pasar un buen rato con Rails. Es preferible darse bien servido con programación por procedimientos y funcional también.</p>
+
+      <p>Esto se aplica a los muchos sub-idiomas de Rails también. No intentamos protegerlo tanto de tener que aprender, por ejemplo, JavaScript para las vistas o SQL para las consultas ocacionalmente complicadas. Al menos no para alcanzar los picos de posibilidades.</p>
+
+      <p>La forma de aliviar algo de esa carga de aprendizaje es simplemente hacer que sea fácil comenzar, hacer algo de valor real, antes de que se entienda cada aspecto del framework. Por este motivo, tenemos prisa por mostrar el típico "Hello World". Ya está lista la mesa e incluye un aperitivo servido.</p>
+
+      <p>La idea es que al dar algo de valor real tempranamente, animamos a los practicantes de Rails a subir su nivel rápidamente. Aceptar su viaje de aprendizaje con alegría, no con obstáculos.</p>
+
     </section>
