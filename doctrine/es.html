@@ -209,4 +209,36 @@ permalink: /doctrine/es
       </p>
 
       <p>Pero el flujo y el enfoque son sutilmente diferentes. En la primera declaración, el foco está en la colección. En la segunda afirmación, el sujeto es claramente la persona. No hay mucho entre las dos declaraciones de longitud, pero sostendré que la segunda es mucho más hermosa y es probable que me haga sonreír cuando se usa en un lugar donde la condición es sobre la persona.</p>
+
+      <h2 id="provide-sharp-knives">Proporcionar cuchillos afilados</h2>
+
+      <p>Ruby incluye un montón de cuchillos afilados como caracteristicas. No por accidente, sino por diseño. El más famoso es el monkey patch: El poder de cambiar las clases y métodos existentes.</p>
+
+      <p>Este poder con frecuencia ha sido ridiculizado como simplemente demasiado para que lo manejen los simples programadores mortales. La gente de entornos más restrictivos solía imaginar todo tipo de calamidades que condenaría a Ruby debido a la inmensa confianza en que el idioma permitia a sus hablantes con esta característica.</p>
+
+      <p>Si se puede cambiar cualquier cosa, ¿qué existe para evitar que se sobrescriba String#capitalize de modo que "algo en negrita".capitalize devuelva "Something Bold" en lugar de "Something bold"? Eso podría funcionar en su aplicación local, pero luego romper todo tipo de código auxiliar que depende de la implementación original.</p>
+
+      <p>Nada, es la respuesta. No hay nada programáticamente en Ruby para evitar que uses sus cuchillos afilados para cortar lazos con la razón. Hacemos valer esos buenos sentidos por convención, por medio de codazos y por medio de la educación. No prohibiendo los cuchillos afilados de la cocina e insistiendo en que todos usen cucharas para cortar tomates.</p>
+
+      <p>Porque la otra cara monkey patching es el poder de hacer hazañas de maravilla como 2.days.ago (que devuelve una fecha dos días atrás de la actual). Ahora bien podría pensar que es un mal negocio. Que preferiría perder 2.days.ago si eso significa evitar que los programadores sobrescriban String#capitalize. Si esa es tu posición, Ruby probablemente no sea para ti.</p>
+
+      <p>Sin embargo, sería difícil, incluso para las personas que renunciarían a tal libertad por algo de seguridad, argumentar que el poder de cambiar las clases y los métodos básicos ha condenado a Ruby como lenguaje. Por el contrario, el lenguaje floreció exactamente porque ofrecía una perspectiva diferente y radical sobre el papel del programador: Que se podía confiar en ellos aún con cuchillos afilados.</p>
+
+      <p>Y no solo es de confianza, sino que también se enseña en las formas de usar tales herramientas. Podríamos elevar toda la profesión suponiendo que la mayoría de los programadores querrían convertirse en mejores programadores, capaces de manejar cuchillos afilados sin cortarse los dedos. Esa es una idea increíblemente ambiciosa, y que va en contra de la intuición de muchos programadores acerca de otros programadores.</p>
+
+      <p>Porque siempre se trata de otros programadores cuando se disputa el valor de los cuchillos afilados. Todavía no he escuchado a un solo programador levantar la mano y decir "No puedo confiar en mí mismo con este poder, ¡por favor, quítamelo!". Siempre es "Creo que otros programadores abusarían de esto". Esa línea de paternalismo nunca me ha atraído.</p>
+
+      <p>Eso nos lleva a Rails. Los cuchillos provistos por el armazón no son tan afilados como los que se ofrecen con el lenguaje, pero algunos todavía tienen muchas ganas de cortar. No daremos disculpas por ofrecer tales herramientas como parte del kit. De hecho, deberíamos celebrar teniendo suficiente fe en las aspiraciones de nuestros compañeros programadores para atrevernos a confiar en ellos.</p>
+
+      <p>Muchas de las funcionalidades de Rails se han cuestionado a lo largo del tiempo como "demasiada libertad". Pero un ejemplo que está actualmente de moda es <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/concern.rb" target="_blank"> la funcionalidad concerns </a>. Esta es una capa delgada de azúcar sintáctica en torno a la funcionalidad incorporada de los módulos de Ruby y está diseñada para permitir que una sola clase encapsule múltiples concerns relacionadas, pero que se entienden de forma independiente (de ahí el nombre).</p>
+
+      <p>La acusación es que los concerns proporcionan a los programadores propensos a inflar sus objetos con un nuevo conjunto de cajones para llenar su desorden. Y eso es cierto. Los concerns pueden ser utilizadas de esa manera.</p>
+
+      <p>Pero la gran mentira es pensar que por <i>no</i> proveer una funcionalidad como los concerns, los cuales al ser usados por incluso manos medianamente capaces, permiten una elocuente separación parcial de los conceptos, habríamos puesto a los programadores en el camino hacia la dicha arquitectonica. Si no se puede confiar en que el fregadero de la cocina no se vea afectado por sus preocupaciones excesivas, es probable que, de lo contrario, no vaya a terminar con algo brillante de elegancia.</p>
+
+      <p>Los programadores que no han aprendido a manejar cuchillos afilados simplemente no van a hacer merengues todavía. Palabra operativa aquí: Todavía. Creo que cada programador tiene un camino, si no un derecho, para convertirse en programadores de Ruby y Rails totalmente capaces. Y, por capacidad, me refiero a saber lo suficiente como para saber cuándo y cómo, de acuerdo con su contexto, deberían usar las herramientas diferentes y, a veces, peligrosas que tienen en sus cajones.</p>
+
+      <p>Eso no renuncia a la responsabilidad de ayudarlos a llegar allí. El lenguaje y el marco deben ser tutores pacientes dispuestos a ayudar y guiar a cualquier persona a la experiencia. Si bien reconocemos que el único curso confiable allí es la tierra de los errores: las herramientas se usaron mal, un poco de sangre, sudor y quizás incluso algunas lágrimas. Simplemente no hay otra manera.</p>
+
+      <p>Ruby on Rails es un entorno para los chefs y aquellos que desean convertirse en chefs. Puede comenzar a lavar los platos, pero puede llegar hasta la cocina. No permita que nadie le diga que no se le puede confiar la mejor herramienta en el negocio como parte de este viaje.</p>
     </section>
