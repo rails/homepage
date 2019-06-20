@@ -24,7 +24,7 @@ permalink: /doctrine/es
           <li><a href="#convention-over-configuration">Convención sobre configuración</a></li>
           <li><a href="#omakase">La carta al estilo omakase</a></li>
           <li><a href="#no-one-paradigm">Ningún paradigma</a></li>
-          <li><a href="#beautiful-code">Exaltar código hermoso</a></li>
+          <li><a href="#beautiful-code">Exaltar el código hermoso</a></li>
           <li><a href="#provide-sharp-knives">Proporcionar cuchillos afilados</a></li>
           <li><a href="#integrated-systems">Valora los sistemas integrados</a></li>
           <li><a href="#progress-over-stability">Progreso sobre estabilidad</a></li>
@@ -157,4 +157,56 @@ permalink: /doctrine/es
 
       <p>La idea es que al dar algo de valor real tempranamente, animamos a los practicantes de Rails a subir su nivel rápidamente. Aceptar su viaje de aprendizaje con alegría, y no con obstáculos.</p>
 
+      <h2 id="beautiful-code">Exaltar el código hermoso</h2>
+
+      <p>Escribimos código no solo para que lo entiendan la computadora u otros programadores, sino también para disfrutar del cálido resplandor de la belleza que refleja. Un código estéticamente agradable es un valor en sí mismo y debe ser alcanzado con vigor. Eso no significa que el código hermoso siempre supere otras preocupaciones, pero debería tener un lugar en la tabla de prioridades.</p>
+
+      <p>Entonces, ¿qué es el código hermoso? En Ruby, a menudo se encuentra en algún lugar en la intersección entre los lenguajes nativos de Ruby y el poder de un lenguaje de dominio especifico. Es una línea borrosa, pero merece la pena intentarlo.</p>
+
+      <p>Aqui un simple ejemplo en Active Record:</p>
+
+      <p>
+        <code><pre>
+    class Project < ApplicationRecord
+      belongs_to :account
+      has_many :participants, class_name: 'Person'
+      validates_presence_of :name
+    end</pre></code>
+      </p>
+
+      <p>Esto parece un DSL, pero en realidad es solo una definición de clase con tres llamadas de métodos de clase que aceptan símbolos y opciones. No hay nada sofisticado aquí. Pero seguro que es bonito. Seguro que es simple. Ofrece una cantidad inmensa de poder y flexibilidad. Solo con esas pocas declaraciones.</p>
+
+      <p>Parte de la belleza proviene de estas llamadas que honran los principios anteriores, como la Convención sobre Configuración. Cuando nosotros llamamos belongs_to :account, asumimos que la clave externa se llama cuenta_id y que vive en la tabla de projects. Cuando tenemos que designar el class_name de Person para el rol de la asociación de participants, requerimos solo esa definición de nombre de clase. De allí derivaremos, de nuevo, las claves foráneas y otros puntos de configuración.</p>
+
+      <p>Aquí hay otro ejemplo del sistema de migración de base de datos:</p>
+
+      <p>
+        <code><pre>
+    class CreateAccounts < ActiveRecord::Migration
+      def change
+        create_table :accounts do |t|
+          t.integer :queenbee_id
+          t.timestamps
+        end
+      end
+    end</pre></code>
+      </p>
+
+      <p>Esta es la esencia del poder del framework. El programador declara una clase de acuerdo con cierta convención, como una subclase de ActiveRecord::Migration que implementa #change, el framework realiza todas las operaciones relacionadas con la migración y también sabe que se trata de un metodo de llamada.</p>
+
+      <p>Esto hace posible escribir menos código. En el caso de las migraciones, esto no solo llama rails db:migrate para agregar una nueva tabla, sino que también le permite eliminarla si es necesario con otro comando. Esto es muy diferente de cómo un programador hace todo esto normalmente.</p>
+
+      <p>Sin embargo, a veces el código hermoso es más sutil. No se trata de hacer algo lo más corto o poderoso posible, sino más bien de hacer que el ritmo de la declaración fluya.</p>
+
+      <p>Estas dos afirmaciones hacen lo mismo:</p>
+
+      <p>
+        <code><pre>
+    if people.include? person
+      …
+
+    if person.in? people</pre></code>
+      </p>
+
+      <p>Pero el flujo y el enfoque son sutilmente diferentes. En la primera declaración, el foco está en la colección. En la segunda afirmación, el sujeto es claramente la persona. No hay mucho entre las dos declaraciones de longitud, pero sostendré que la segunda es mucho más hermosa y es probable que me haga sonreír cuando se usa en un lugar donde la condición es sobre la persona.</p>
     </section>
