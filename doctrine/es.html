@@ -22,7 +22,7 @@ permalink: /doctrine/es
         <ol>
           <li><a href="#optimize-for-programmer-happiness">Optimización para la felicidad del programador</a></li>
           <li><a href="#convention-over-configuration">Convención sobre configuración</a></li>
-          <li><a href="#omakase">La carta omakase</a></li>
+          <li><a href="#omakase">La carta al estilo omakase</a></li>
           <li><a href="#no-one-paradigm">Ningún paradigma</a></li>
           <li><a href="#beautiful-code">Exaltar código hermoso</a></li>
           <li><a href="#provide-sharp-knives">Proporcionar cuchillos afilados</a></li>
@@ -105,4 +105,27 @@ permalink: /doctrine/es
       <p>Sin embargo, como con cualquier cosa, el poder de la convención no viene sin peligro. Cuando Rails hace que sea tan trivial hacer tanto, es fácil pensar que todos los aspectos de una aplicación pueden estar formados por plantillas pre-definidas. Pero la mayoría de las aplicaciones que vale la pena construir tienen algunos elementos que son únicos de alguna manera. Puede que solo sea el 5% o 1%, pero está ahí.</p>
 
       <p>La parte más difícil es saber cuándo dejar las convenciones. ¿Cuándo son las razones lo suficientemente serias para justificar esta decisión? Sostengo que la mayoría de los requisitos previos para ser un hermoso y único copo de nieve son poco considerados, y el costo de desviarse de Rails está subestimado. De hecho, hay un precio y usted debe reflexionar profundamente.</p>
+
+      <h2 id="omakase">La carta al estilo omakase</h2>
+
+      <p>¿Cómo sabes lo qué debes pedir en un restaurante cuando no sabes lo que es bueno? Bien, si dejas que el chef elija por ti, probablemente pueda sugerir una buena comida, incluso antes de que tu sepas qué es lo "bueno". Eso es omakase. Una forma de comer bien que no requiere ser un experto en comidas o probar suerte para ordenar cosas buenas.</p>
+
+      <p>En la programación, el beneficio de el uso de esta práctica es que otros armen su stack tecnologico, similar a los argumentos que obtenemos de la convención sobre la configuración, pero va un paso más allá. CoC considera cómo utilizar mejor un framework individual, mientras que Omakase considera <em>qué</em> framework usar y cómo colaborar entre framework.</p>
+
+      <p>Esto está en desacuerdo con la venerada tradición en la programación de querer presentar las herramientas disponibles como opciones individuales, y otorgarle al programador individual el privilegio (y la carga!) de decidir.</p>
+
+      <p>Probablemente escuchó, y lo más probable, es que asintió con la cabeza en el momento en que alguien le dijo "use la mejor herramienta en el trabajo". Suena tan elemental que ni siquiera se puede discutir, pero la capacidad de elegir la "mejor herramienta" depende de las bases que le permiten determinar lo "mejor" con plena confianza. Esto es mucho más difícil de lo que parece.</p>
+
+      <p>Este es un problema como el de la cena en un restaurante. Cómo elegir entre ocho platos, entonces la elección de una libreria o framework no debe ser un trabajo aislado. El objetivo en ambos casos es considerar toda la noche o el sistema.</p>
+
+      <p>Por lo tanto, en Rails decidimos reducir la elección, reemplazar la elección individual de un programador de herramientas individuales con algo más grande: Un mejor conjunto de herramientas para todos. Los dividendos son legión:</p>
+
+      <p><ol><li><b>Hay seguridad en los números:</b> Cuando la mayoría de las personas utilizan Rails de la misma forma predeterminada, tenemos una experiencia compartida. Este terreno común hace que sea mucho más fácil enseñar y ayudar a las personas. Sienta una base para el debate sobre el enfoque. Todos vimos el mismo programa anoche a las 7, así que podemos hablar sobre ello al día siguiente. Fomenta un sentido más fuerte de comunidad.</li>
+
+      <li><b>La gente está perfeccionando la misma caja de herramientas básica:</b> Como full-stack framework, Rails tiene muchas partes móviles, y la forma en que trabajan juntas es tan importante como lo que hacen de forma aislada. Gran parte del sufrimiento en el software no proviene de los componentes individuales, sino de su interacción. Cuando todos trabajamos para aliviar el sufrimiento compartido de los componentes que están configurados y fallan de la misma manera, todos experimentamos menos sufrimiento.</li>
+
+      <li><b>Las sustituciones siguen siendo posibles, pero no son necesarias:</b> Si bien Rails es una stack omakase, todavía te permite reemplazar ciertos frameworks o librerias con alternativas. Simplemente no requiere que lo hagas. Lo que significa que puede retrasar esas decisiones hasta que haya desarrollado una paleta clara y personal que puede preferir la diferencia ocasional.</li>
+      </ol></p>
+
+      <p>Porque incluso los programadores más expertos y capacitados que vienen y se quedan en Rails probablemente no se oponen a todos los asuntos del menú. (Si lo hicieran, no se habrían quedado con Rails). Así que eligen sus sustituciones con diligencia y luego continúan disfrutando del resto del stack compartido junto con todos los demás.</p>
     </section>
