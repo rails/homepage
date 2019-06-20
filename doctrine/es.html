@@ -102,7 +102,7 @@ permalink: /doctrine/es
 
       <p>Lo mismo ocurre incluso cuando entiendes cómo todas las piezas van juntas. Cuando hay un próximo paso obvio para cada cambio, podemos desplazarnos a través de las muchas partes de una aplicación que es igual o muy similar a todas las demás aplicaciones que la precedieron. Un lugar para cada cosa y cada cosa en su lugar. Las restricciones liberan incluso a las mentes más capaces.</p>
 
-      <p>Sin embargo, como con cualquier cosa, el poder de la convención no viene sin peligro. Cuando Rails hace que sea tan trivial hacer tanto, es fácil pensar que todos los aspectos de una aplicación pueden estar formados por plantillas pre-definidas. Pero la mayoría de las aplicaciones que valen la pena construir tienen algunos elementos que son únicos de alguna manera. Aunque sea solo el 5% o 1%, aún hay algo ahí.</p>
+      <p>Sin embargo, como con cualquier cosa, el poder de la convención no viene sin peligro. Cuando Rails hace que sea tan trivial hacer tanto, es fácil pensar que todos los aspectos de una aplicación pueden estar formados por templates pre-definidas. Pero la mayoría de las aplicaciones que valen la pena construir tienen algunos elementos que son únicos de alguna manera. Aunque sea solo el 5% o 1%, aún hay algo ahí.</p>
 
       <p>La parte más difícil es saber cuándo dejar las convenciones. ¿Cuándo son las razones lo suficientemente serias para justificar esta decisión? Sostengo que la mayoría de los requisitos previos para ser un hermoso y único copo de nieve son muy poco considerados, y el costo de desviarse de Rails está subestimado. De hecho, hay un precio y usted debe reflexionar sobre esto profundamente.</p>
 
@@ -135,7 +135,7 @@ permalink: /doctrine/es
 
       <p>Rails no es así. No es un solo corte perfecto de tela. Es una colcha. Un compuesto de muchas ideas diferentes e incluso paradigmas. Muchos que normalmente se verían en conflicto, si se contrastan solos y uno por uno. No es un campeonato de ideas superiores donde se debe declarar un único ganador.</p>
 
-      <p>Tome las plantillas con las que creamos las vistas en nuestro pastel Rails-MVC. Por defecto, todos los helpers que nos permiten extraer código de estas plantillas son simplemente un gran conjunto de metodos. Este es un solo espacio de nombres. ¡Oh, la sorpresa, el horror, es como una sopa de PHP!</p>
+      <p>Tome las templates con las que creamos las vistas en nuestro pastel Rails-MVC. Por defecto, todos los helpers que nos permiten extraer código de estas templates son simplemente un gran conjunto de metodos. Este es un solo espacio de nombres. ¡Oh, la sorpresa, el horror, es como una sopa de PHP!</p>
 
       <p>Pero sostengo que PHP tenía razón cuando se trataba de presentar funciones individuales que rara vez necesitaban interactuar, como ocurre con mucha abstracción en las vistas. Y para este propósito, el espacio de nombres, el gran conjunto de metodos, no solo es una opción razonable, sino una excelente.</p>
 
@@ -241,6 +241,26 @@ permalink: /doctrine/es
       <p>Eso no renuncia a la responsabilidad de ayudarlos a llegar allí. El lenguaje y el marco deben ser tutores pacientes dispuestos a ayudar y guiar a cualquier persona a la experiencia. Si bien reconocemos que el único curso confiable allí es la tierra de los errores: las herramientas se usaron mal, un poco de sangre, sudor y quizás incluso algunas lágrimas. Simplemente no hay otra manera.</p>
 
       <p>Ruby on Rails es un entorno para los chefs y aquellos que desean convertirse en chefs. Puede comenzar a lavar los platos, pero puede llegar hasta la cocina. No permita que nadie le diga que no se le puede confiar la mejor herramienta en el negocio como parte de este viaje.</p>
+
+      <h2 id="integrated-systems">Valora los sistemas integrados</h2>
+
+      <p>Rails se pueden usar en muchos contextos, pero su primer amor es la creación de sistemas integrados: ¡Monolitos majestuosos! Todo un sistema que aborda todo un problema. Esto significa que Rails está preocupado por todo, desde el JavaScript de front-end necesario para realizar actualizaciones en vivo hasta cómo se migra la base de datos de una versión a otra en producción.</p>
+
+      <p>Ese es un alcance muy amplio, como hemos discutido, pero no más amplio que ser realista para entender por una sola persona. Rails específicamente busca equipar a individuos generalistas para hacer estos sistemas completos. Su propósito no es separar a los especialistas en pequeños nichos y luego requerir equipos enteros de los mismos para construir cualquier cosa de valor duradero.</p>
+
+      <p>Es este enfoque en empoderar al individuo que apunta al sistema integrado. En el sistema integrado, podemos eliminar muchas abstracciones innecesarias, reducir la duplicación entre capas (como las templates tanto en el servidor como en el cliente) y, sobre todo, evitar la distribución de nuestro sistema antes de que tengamos que hacerlo necesariamente.</p>
+
+      <p>Gran parte de la complicación en el desarrollo de sistemas proviene de la introducción de nuevos límites entre los elementos que restringen la forma en que usted realiza las llamadas entre A y B. Las llamadas de método entre objetos son mucho más simples que las llamadas a procedimientos remotos entre microservicios. Hay todo un mundo nuevo de daño en los estados de falla, problemas de latencia y programas de actualización de dependencias que esperan a quienes se aventuran en la guarida de la distribución.</p>
+
+      <p>A veces esta distribución es simplemente necesaria. Si desea crear una API para su aplicación web a la que otras personas puedan llamar a través de HTTP, entonces, simplemente debe absorberla y resolver muchos de estos problemas (aunque manejar las solicitudes entrantes en lugar de enviarlas es mucho más fácil). su tiempo de inactividad es el estado de falla de otra persona!). Pero eso es al menos una cantidad limitada de daño infligido en su propia experiencia de desarrollo personal.</p>
+
+      <p>Lo que es peor es cuando los sistemas se desintegran prematuramente y se dividen en servicios o, lo que es peor, en microservicios. Con frecuencia, esta unidad parte de la idea errónea de que si desea una aplicación moderna de Internet, simplemente tendrá que construir los sistemas muchas veces: una vez en el lado del servidor, una vez en el lado del cliente MVC de JavaScript, una vez para cada uno de las aplicaciones móviles, y así sucesivamente. Esto no es una ley de la naturaleza, no tiene por qué ser así.</p>
+
+      <p>Es completamente posible compartir grandes porciones de toda la aplicación a través de múltiples aplicaciones y accesos. Para utilizar los mismos controladores y vistas para el escritorio web que para aplicaciones integradas en dispositivos móviles nativos. Para centralizar tanto como sea posible dentro de ese glorioso y majestuoso monolito: El sistema integrado.</p>
+
+      <p>Todo esto sin renunciar a mucho, si no algo, en términos de velocidad, experiencia del usuario u otros atributos que atraen falsamente a los desarrolladores a una distribución prematura.</p>
+
+      <p>Es lo que más buscamos: todo el poder de las aplicaciones ajustadas y distribuidas individualmente con la facilidad de uso y la comprensión de un sistema único e integrado.</p>
 
       <h2 id="progress-over-stability">Progreso sobre estabilidad</h2>
 
