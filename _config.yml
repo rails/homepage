@@ -3,17 +3,17 @@ exclude:
   - Gemfile.lock
   - CNAME
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
 
-title: Ruby on Rails
-description: A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
+title: Azzen Abidi
+description: A marketer with a hacker mindset on a journey to make a dent in the universe
 twitter:
-  username: rails
+  username: azzenabidi
 defaults:
   - scope:
       path: ""
     values:
-      image: https://avatars.githubusercontent.com/u/4223
+      image: 
